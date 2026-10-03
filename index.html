@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>النور سٹاکسٹ حافظ آباد - ملازمتیں</title>
+
+<style>
+
+/* =========================
+   BASIC DESIGN
+========================= */
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+
+    margin:0;
+
+    background:#eef5f0;
+
+    color:#222;
+
+    font-family:
+    "Noto Nastaliq Urdu",
+    "Jameel Noori Nastaleeq",
+    Arial,
+    sans-serif;
+}
+
+
+.container{
+
+    max-width:700px;
+
+    margin:auto;
+
+    padding:15px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+
+    background:
+    linear-gradient(
+        135deg,
+        #075b31,
+        #0c7a42
+    );
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px 15px;
+
+    border-radius:
+    0 0 25px 25px;
+}
+
+
+.header h1{
+
+    margin:0 0 8px;
+
+    font-size:28px;
+}
+
+
+.header p{
+
+    margin:5px 0;
+
+    font-size:16px;
+}
+
+
+/* =========================
+   PAGES
+========================= */
+
+.page{
+
+    display:none;
+}
+
+
+.page.active{
+
+    display:block;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+
+    background:white;
+
+    margin:18px 0;
+
+    padding:22px;
+
+    border-radius:16px;
+
+    box-shadow:
+    0 4px 15px
+    rgba(0,0,0,0.10);
+}
+
+
+.title{
+
+    color:#075b31;
+
+    border-right:
+    6px solid #075b31;
+
+    padding-right:12px;
+
+    margin-top:0;
+}
+
+
+/* =========================
+   JOBS
+========================= */
+
+.job{
+
+    border:
+    1px solid #d8e3dc;
+
+    border-right:
+    5px solid #0b713c;
+
+    padding:15px;
+
+    margin:12px 0;
+
+    border-radius:10px;
+
+    background:#fafdfb;
+}
+
+
+.job-title{
+
+    color:#075b31;
+
+    font-size:19px;
+
+    font-weight:bold;
+}
+
+
+.salary{
+
+    color:#c47a00;
+
+    font-weight:bold;
+}
+
+
+/* =========================
+   INFORMATION
+========================= */
+
+.info{
+
+    line-height:2.1;
+
+    font-size:17px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+label{
+
+    display:block;
+
+    margin-top:12px;
+
+    font-weight:bold;
+
+    color:#075b31;
+}
+
+
+input,
+select{
+
+    width:100%;
+
+    padding:13px;
+
+    margin-top:5px;
+
+    border:
+    1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    font-family:inherit;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:20px;
+}
+
+
+.btn{
+
+    flex:1;
+
+    padding:13px;
+
+    border:0;
+
+    border-radius:9px;
+
+    background:#075b31;
+
+    color:white;
+
+    font-size:17px;
+
+    font-family:inherit;
+
+    cursor:pointer;
+}
+
+
+.prev{
+
+    background:#777;
+}
+
+
+.whatsapp{
+
+    background:#128c7e;
+}
+
+
+/* =========================
+   NOTE
+========================= */
+
+.note{
+
+    background:#fff3cd;
+
+    border-right:
+    5px solid #e0a800;
+
+    padding:15px;
+
+    border-radius:8px;
+
+    margin-top:15px;
+
+    line-height:1.9;
+}
+
+
+/* =========================
+   QR CODE
+========================= */
+
+.qr-box{
+
+    text-align:center;
+
+    background:#fafafa;
+
+    border:
+    1px solid #ddd;
+
+    border-radius:12px;
+
+    padding:18px;
+
+    margin-top:15px;
+}
+
+
+.qr-title{
+
+    font-size:21px;
+
+    font-weight:bold;
+
+    color:#075b31;
+
+    margin-bottom:10px;
+}
+
+
+.qr-box img{
+
+    width:100%;
+
+    max-width:350px;
+
+    height:auto;
+
+    display:block;
+
+    margin:15px auto;
+
+    border-radius:10px;
+}
+
+
+/* =========================
+   PAGE NUMBER
+========================= */
+
+.page-number{
+
+    text-align:center;
+
+    color:#777;
+
+    margin-top:15px;
+
+    font-size:14px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+
+    text-align:center;
+
+    padding:20px;
+
+    color:#555;
+
+    font-size:14px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =================================================
+     HEADER
+================================================= -->
+
+<div class="header">
+
+<h1>
+🏢 Health Department
+</h1>
+
+<p>
+النور سٹاکسٹ حافظ آباد
+</p>
+
+<p>
+ملازمت کے مواقع
+</p>
+
+</div>
+
+
+<div class="container">
+
+
+<!-- =================================================
+     PAGE 1
+================================================= -->
+
+<section
+class="page active"
+id="page1">
+
+
+<div class="card">
+
+
+<h2 class="title">
+
+📄 Page 1 -
+ہمارے کام کے بارے میں
+
+</h2>
+
+
+<p class="info">
+
+ہمارا کام محکمہ صحت
+(Health Department)
+سے متعلق ہے۔
+
+نیم سرکاری ڈیپارٹمنٹ ہے۔
+
+</p>
+
+
+<p class="info">
+
+<strong>
+ہمارے کام کی دو اقسام ہیں:
+</strong>
+
+<br><br>
+
+1️⃣ ہسپتال میں کام
+
+<br>
+
+2️⃣ آفس میں کام
+
+</p>
+
+
+<p class="info">
+
+<strong>
+ہمارا کام آفس ورک ہے۔
+</strong>
+
+</p>
+
+
+<p class="info">
+
+ہمارے ادارے میں مڈل سے ماسٹر تک
+والے لوگ کام کرتے ہیں۔
+
+</p>
+
+
+<p class="info">
+
+ہمارا سسٹم یہ ہے کہ باہر سے میڈیسن
+آتی ہے اور یہاں سے پورے پاکستان میں
+سپلائی ہوتی ہے۔
+
+</p>
+
+
+<p class="info">
+
+ہمارا کام آفس میں بیٹھ کر اس سٹاک
+کا ریکارڈ رکھنا اور لکھنے پڑھنے
+کا کام سنبھالنا ہے۔
+
+</p>
+
+
+</div>
+
+
+<div class="buttons">
+
+<button
+class="btn"
+onclick="nextPage(2)">
+
+اگلا صفحہ ➡️
+
+</button>
+
+</div>
+
+
+<div class="page-number">
+
+صفحہ 1 / 4
+
+</div>
+
+
+</section>
+
+
+
+<!-- =================================================
+     PAGE 2
+================================================= -->
+
+<section
+class="page"
+id="page2">
+
+
+<div class="card">
+
+
+<h2 class="title">
+
+📢 بڑی بھرتی کا اعلان
+
+</h2>
+
+
+<p>
+
+<strong>
+برانچ نیم:
+</strong>
+
+النور سٹاکسٹ حافظ آباد
+
+</p>
+
+
+<h3
+style="color:#075b31">
+
+💼 خالی آسامیاں +
+تنخواہیں اور ڈیوٹیاں
+
+</h3>
+
+
+<!-- JOB 1 -->
+
+<div class="job">
+
+<div class="job-title">
+
+1. اسٹور انچارج
+
+</div>
+
+<p class="salary">
+
+💰 48,000 روپے
+
+</p>
+
+<p>
+
+🎓 تعلیم:
+انٹر سے گریجویشن
+
+</p>
+
+<p>
+
+📋 ڈیوٹی:
+اسٹور کا مکمل انتظام،
+ادویات اور میڈیکل آلات
+کے اسٹاک کی رپورٹ تیار کرنا
+
+</p>
+
+</div>
+
+
+<!-- JOB 2 -->
+
+<div class="job">
+
+<div class="job-title">
+
+2. اسٹور کیپر
+
+</div>
+
+<p class="salary">
+
+💰 47,000 روپے
+
+</p>
+
+<p>
+
+🎓 تعلیم:
+انٹر
+
+</p>
+
+<p>
+
+📋 ڈیوٹی:
+ریکارڈ رکھنا،
+ادویات کی انٹری /
+اسٹاک چیک کرنا
+
+</p>
+
+</div>
+
+
+<!-- JOB 3 -->
+
+<div class="job">
+
+<div class="job-title">
+
+3. سپروائزر
+
+</div>
+
+<p class="salary">
+
+💰 48,500 روپے
+
+</p>
+
+<p>
+
+🎓 تعلیم:
+انٹر
+
+</p>
+
+<p>
+
+📋 ڈیوٹی:
+نگرانی کرنا،
+ڈیلی کام کی تقسیم،
+ڈسپلن فالو رکھنا
+
+</p>
+
+</div>
+
+
+<!-- JOB 4 -->
+
+<div class="job">
+
+<div class="job-title">
+
+4. کمپیوٹر آپریٹر
+
+</div>
+
+<p class="salary">
+
+💰 45,000 روپے
+
+</p>
+
+<p>
+
+🎓 تعلیم:
+انٹر + کمپیوٹر کورس
+سے گریجویشن
+
+</p>
+
+<p>
+
+📋 ڈیوٹی:
+انٹری، ریکارڈ انفارمیشن
+مینشن کرنا، ریکارڈ محفوظ رکھنا
+
+</p>
+
+</div>
+
+
+<!-- JOB 5 -->
+
+<div class="job">
+
+<div class="job-title">
+
+5. اسسٹنٹ
+
+</div>
+
+<p class="salary">
+
+💰 42,000 روپے
+
+</p>
+
+<p>
+
+🎓 تعلیم:
+میٹرک سے انٹر
+
+</p>
+
+<p>
+
+📋 ڈیوٹی:
+مینجر صاحب کے ساتھ ڈیوٹی
+
+</p>
+
+</div>
+
+
+<!-- JOB 6 -->
+
+<div class="job">
+
+<div class="job-title">
+
+6. آفس بوائے
+
+</div>
+
+<p class="salary">
+
+💰 40,000 روپے
+
+</p>
+
+<p>
+
+🎓 تعلیم:
+مڈل سے میٹرک
+
+</p>
+
+<p>
+
+📋 ڈیوٹی:
+دفتر کی صفائی
+اور دیگر معاونت
+
+</p>
+
+</div>
+
+
+<!-- JOB 7 -->
+
+<div class="job">
+
+<div class="job-title">
+
+7. سیل مین
+
+</div>
+
+<p class="salary">
+
+💰 55,000 روپے
+
+</p>
+
+<p>
+
+🎓 تعلیم:
+مڈل سے ماسٹر
+
+</p>
+
+<p>
+
+📋 ڈیوٹی:
+کسٹمر ڈیل کرنا،
+ادویات کو سیل کرنا،
+سیل ریشو کو بڑھانا،
+نیو کسٹمر تلاش کرنا
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="buttons">
+
+
+<button
+class="btn prev"
+onclick="nextPage(1)">
+
+⬅️ پچھلا
+
+</button>
+
+
+<button
+class="btn"
+onclick="nextPage(3)">
+
+اگلا ➡️
+
+</button>
+
+
+</div>
+
+
+<div class="page-number">
+
+صفحہ 2 / 4
+
+</div>
+
+
+</section>
+
+
+
+<!-- =================================================
+     PAGE 3
+================================================= -->
+
+<section
+class="page"
+id="page3">
+
+
+<div class="card">
+
+
+<h2 class="title">
+
+🎁 سہولیات
+
+</h2>
+
+
+<div class="info">
+
+
+<p>
+
+⏰
+<strong>
+ڈیوٹی:
+</strong>
+
+صبح 8:00 سے شام 5:00 تک
+- 8 گھنٹے
+
+</p>
+
+
+<p>
+
+🍽️🏠
+<strong>
+کھانا + رہائش:
+</strong>
+
+فری
+
+</p>
+
+
+<p>
+
+💰
+<strong>
+ماہانہ تنخواہ:
+</strong>
+
+وقت پر اکاؤنٹ میں
+
+</p>
+
+
+<p>
+
+🎁
+<strong>
+اچھی کارکردگی:
+</strong>
+
+انعامات + بونس
+
+</p>
+
+
+<p>
+
+🗓️
+<strong>
+چھٹیاں:
+</strong>
+
+مہینے میں 4
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="card">
+
+
+<h2 class="title">
+
+📋 اہلیت
+
+</h2>
+
+
+<div class="info">
+
+
+<p>
+
+🎂
+<strong>
+عمر:
+</strong>
+
+18 سے 30 سال
+
+</p>
+
+
+<p>
+
+🎓
+<strong>
+تعلیم:
+</strong>
+
+کم از کم مڈل سے ماسٹر تک
+
+</p>
+
+
+<p>
+
+💼
+<strong>
+تجربہ:
+</strong>
+
+فریشر اور تجربہ کار دونوں
+اپلائی کر سکتے ہیں
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+<div class="buttons">
+
+
+<button
+class="btn prev"
+onclick="nextPage(2)">
+
+⬅️ پچھلا
+
+</button>
+
+
+<button
+class="btn"
+onclick="nextPage(4)">
+
+اگلا ➡️
+
+</button>
+
+
+</div>
+
+
+<div class="page-number">
+
+صفحہ 3 / 4
+
+</div>
+
+
+</section>
+
+
+
+<!-- =================================================
+     PAGE 4
+================================================= -->
+
+<section
+class="page"
+id="page4">
+
+
+<div class="card">
+
+
+<h2 class="title">
+
+📄 اپلائی کرنے کا طریقہ
+
+</h2>
+
+
+<p>
+
+براہ کرم اپنی درست معلومات درج کریں۔
+
+</p>
+
+
+<form
+onsubmit="sendWhatsApp(event)">
+
+
+<!-- NAME -->
+
+<label>
+
+نام
+
+</label>
+
+<input
+type="text"
+id="name"
+placeholder="اپنا نام لکھیں"
+required
+>
+
+
+<!-- FATHER -->
+
+<label>
+
+والد کا نام
+
+</label>
+
+<input
+type="text"
+id="father"
+placeholder="والد کا نام"
+required
+>
+
+
+<!-- DOB -->
+
+<label>
+
+ڈیٹ آف برتھ
+
+</label>
+
+<input
+type="date"
+id="dob"
+required
+>
+
+
+<!-- EDUCATION -->
+
+<label>
+
+تعلیم
+
+</label>
+
+<input
+type="text"
+id="education"
+placeholder="مثلاً میٹرک / انٹر / گریجویشن"
+required
+>
+
+
+<!-- EXPERIENCE -->
+
+<label>
+
+ایکسپیرینس
+
+</label>
+
+<input
+type="text"
+id="experience"
+placeholder="تجربہ یا فریشر"
+required
+>
+
+
+<!-- CNIC -->
+
+<label>
+
+آئی ڈی کارڈ نمبر
+
+</label>
+
+<input
+type="text"
+id="cnic"
+placeholder="35202-1234567-1"
+required
+>
+
+
+<!-- ADDRESS -->
+
+<label>
+
+مکمل ایڈریس
+
+</label>
+
+<input
+type="text"
+id="address"
+placeholder="اپنا مکمل پتہ"
+required
+>
+
+
+<!-- PHONE -->
+
+<label>
+
+اپنا فون نمبر
+
+</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="03XXXXXXXXX"
+required
+>
+
+
+<!-- HOME PHONE -->
+
+<label>
+
+گھر کے سربراہ کا فون نمبر
+
+</label>
+
+<input
+type="tel"
+id="homePhone"
+placeholder="03XXXXXXXXX"
+required
+>
+
+
+<!-- POST -->
+
+<label>
+
+کس پوسٹ کے لیے اپلائی کرنا ہے؟
+
+</label>
+
+
+<select
+id="post"
+required>
+
+
+<option value="">
+
+پوسٹ منتخب کریں
+
+</option>
+
+
+<option>
+اسٹور انچارج
+</option>
+
+
+<option>
+اسٹور کیپر
+</option>
+
+
+<option>
+سپروائزر
+</option>
+
+
+<option>
+کمپیوٹر آپریٹر
+</option>
+
+
+<option>
+اسسٹنٹ
+</option>
+
+
+<option>
+آفس بوائے
+</option>
+
+
+<option>
+سیل مین
+</option>
+
+
+</select>
+
+
+
+<!-- =================================================
+     TOKEN FEE NOTE
+================================================= -->
+
+<div class="note">
+
+
+<strong>
+📌 نوٹ:
+</strong>
+
+
+<br><br>
+
+
+اپلائی ٹوکن فیس:
+
+<strong>
+100 روپے
+</strong>
+
+
+<br><br>
+
+
+فیس ادا کرنے کے لیے
+نیچے دیا گیا Easypaisa QR Code
+اسکین کریں۔
+
+
+</div>
+
+
+
+<!-- =================================================
+     QR CODE
+================================================= -->
+
+<div class="qr-box">
+
+
+<div class="qr-title">
+
+💳 Easypaisa QR Code
+
+</div>
+
+
+<p>
+
+📱 QR Code اسکین کرکے
+100 روپے ٹوکن فیس ادا کریں۔
+
+</p>
+
+
+<img
+src="easypaisa_qr_only.png"
+alt="Easypaisa QR Code"
+>
+
+
+<p
+style="
+font-weight:bold;
+color:#075b31;
+">
+
+✅ QR Code اسکین کریں
+
+</p>
+
+
+</div>
+
+
+<br>
+
+
+<!-- WHATSAPP -->
+
+<button
+class="btn whatsapp"
+type="submit">
+
+📲 WhatsApp پر درخواست بھیجیں
+
+</button>
+
+
+</form>
+
+
+</div>
+
+
+
+<!-- CONTACT -->
+
+<div class="card">
+
+
+<h3
+style="
+text-align:center;
+color:#075b31;
+">
+
+📞 رابطہ
+
+</h3>
+
+
+<p
+style="text-align:center"
+>
+
+
+<strong>
+
+Muhammad Hamza
+
+</strong>
+
+
+<br>
+
+
+HR-Department Manager Hafizabad
+
+
+<br><br>
+
+
+📱 03492126622
+
+
+</p>
+
+
+</div>
+
+
+
+<div class="buttons">
+
+
+<button
+class="btn prev"
+onclick="nextPage(3)">
+
+⬅️ پچھلا صفحہ
+
+</button>
+
+
+</div>
+
+
+<div class="page-number">
+
+صفحہ 4 / 4
+
+</div>
+
+
+</section>
+
+
+</div>
+
+
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+النور سٹاکسٹ حافظ آباد
+
+<br>
+
+ملازمت کے لیے اپنی معلومات درست درج کریں۔
+
+</div>
+
+
+
+<!-- =================================================
+     JAVASCRIPT
+================================================= -->
+
+<script>
+
+
+/* PAGE SYSTEM */
+
+function nextPage(pageNumber){
+
+
+    document
+    .querySelectorAll(".page")
+    .forEach(function(page){
+
+        page.classList.remove("active");
+
+    });
+
+
+    document
+    .getElementById(
+        "page" + pageNumber
+    )
+    .classList.add("active");
+
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+}
+
+
+
+/* WHATSAPP FORM */
+
+function sendWhatsApp(event){
+
+    event.preventDefault();
+
+
+    let name =
+    document.getElementById("name").value;
+
+
+    let father =
+    document.getElementById("father").value;
+
+
+    let dob =
+    document.getElementById("dob").value;
+
+
+    let education =
+    document.getElementById("education").value;
+
+
+    let experience =
+    document.getElementById("experience").value;
+
+
+    let cnic =
+    document.getElementById("cnic").value;
+
+
+    let address =
+    document.getElementById("address").value;
+
+
+    let phone =
+    document.getElementById("phone").value;
+
+
+    let homePhone =
+    document.getElementById("homePhone").value;
+
+
+    let post =
+    document.getElementById("post").value;
+
+
+
+    let message =
+
+`السلام علیکم
+
+میں ملازمت کے لیے اپلائی کرنا چاہتا/چاہتی ہوں۔
+
+📄 درخواست کی معلومات:
+
+👤 نام:
+${name}
+
+👨 والد کا نام:
+${father}
+
+🎂 ڈیٹ آف برتھ:
+${dob}
+
+🎓 تعلیم:
+${education}
+
+💼 ایکسپیرینس:
+${experience}
+
+🪪 آئی ڈی کارڈ نمبر:
+${cnic}
+
+🏠 مکمل ایڈریس:
+${address}
+
+📱 اپنا فون نمبر:
+${phone}
+
+☎️ گھر کے سربراہ کا فون نمبر:
+${homePhone}
+
+💼 مطلوبہ پوسٹ:
+${post}
+
+شکریہ۔`;
+
+
+    let whatsappNumber =
+    "923492126622";
+
+
+    let whatsappURL =
+    "https://wa.me/" +
+    whatsappNumber +
+    "?text=" +
+    encodeURIComponent(message);
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+}
+
+</script>
+
+
+</body>
+
+</html>
